@@ -18,6 +18,7 @@ let contraction = 1;
 let actin1, actin2, myosin1, myosin2;
 
 loader.load('/src/myosin.gltf', gltf => {
+	console.log(gltf);
 	scene.add(gltf.scene);
 	gltf.scene.position.set(0, 0, 0);
 });
