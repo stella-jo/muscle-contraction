@@ -17,30 +17,30 @@ const loader = new GLTFLoader();
 let contraction = 1;
 let actin1, actin2, myosin1, myosin2;
 
-loader.load('/src/myosin.gltf', gltf => {
+loader.load('src/myosin.gltf', gltf => {
 	scene.add(gltf.scene);
 	gltf.scene.position.set(0, 0, 0);
 });
 
-loader.load('/src/actin.gltf', gltf => {
+loader.load('src/actin.gltf', gltf => {
 	actin1 = gltf.scene;
 	scene.add(actin1);
 	actin1.position.set(5, 0, 0);
 });
 
-loader.load('/src/actin.gltf', gltf => {
+loader.load('src/actin.gltf', gltf => {
 	actin2 = gltf.scene;
 	scene.add(actin2);
 	actin2.position.set(-5, 0, 0);
 });
 
-loader.load('/src/myosin.gltf', gltf => {
+loader.load('src/myosin.gltf', gltf => {
 	myosin1 = gltf.scene;
 	scene.add(myosin1);
 	myosin1.position.set(10, 0, 0);
 });
 
-loader.load('/src/myosin.gltf', gltf => {
+loader.load('src/myosin.gltf', gltf => {
 	myosin2 = gltf.scene;
 	scene.add(myosin2);
 	myosin2.position.set(-10, 0, 0);
